@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html class="fontawesome-i2svg-active fontawesome-i2svg-complete">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!-- HTML Meta Tags -->
+    <title>💜 UniEdit-Flow</title>
+    <meta name="description" content="UniEdit-Flow: Unleashing Inversion and Editing in the Era of Flow Models">
+
+    <!-- Google tag (gtag.js) -->
+    <script async="" src="./assets/js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-9VZKE74FPW');
+    </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "AMS" } }, });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+
+    <title>UniEdit-Flow: Unleashing Inversion and Editing in the Era of Flow Models</title>
+
+    <link href="./assets/css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./assets/css/tab_gallery.css">
+    <!-- <link rel="stylesheet" href="./assets/css/fontawesome.all.min.css"> -->
+    <link rel="stylesheet" href="./assets/css/academicons.min.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/juxtapose.css">
+    <link rel="stylesheet" href="./assets/css/image_card_fader.css">
+    <link rel="stylesheet" href="./assets/css/image_card_slider.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Monoton' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Akronim' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Sofia ' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=VT323 ' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display ' rel='stylesheet'>
+
+</head>
+
+
+
+<body data-new-gr-c-s-check-loaded="14.1098.0" data-gr-ext-installed="">
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h1 class="title is-1 publication-title"> <span style="color: rgb(141, 133, 229);">UniEdit-Flow</span> <br> Unleashing Inversion and Editing <br> in the Era of Flow Models</h1>
+                        <div class="column has-text-centered">
+
+                            <div class="is-size-5 publication-authors">
+                                <p>
+                                    <span class="author-block">
+                                Guanlong Jiao</a><sup>1,3</sup>&nbsp</span>
+                                    <span class="author-block">
+                                Biqing Huang</a><sup>1</sup>&nbsp</span>
+                                    <span class="author-block">
+                                <a href="https://wangkua1.github.io/"><span style="color: rgb(141, 133, 229);">Kuan-Chieh Wang</span></a><sup>2</sup>&nbsp</span>
+                                    <span class="author-block">
+                                <a href="https://lrjconan.github.io/"><span style="color: rgb(141, 133, 229);">Renjie Liao</span></a><sup>3</sup>&nbsp</span>
+                                </p>
+                            </div>
+
+                            <div class="is-size-5 publication-authors">
+                                <p>
+                                    <span class="author-block">
+                            <sup>1</sup>Tsinghua University&nbsp</span>
+                                    <span class="author-block">
+                            <sup>2</sup>Snap Inc.&nbsp</span>
+                                    <span class="author-block">
+                            <sup>3</sup>The University of British Columbia&nbsp</span>
+                                </p>
+                                <!-- <p id="fn1" style="font-size: medium;">* Equal contribution &nbsp&nbsp 
+                                    <a href="#ref2"></a>
+                                </p> -->
+                                <!-- <p id="fn1" style="font-size: large;">
+                                    CVPR 2024 -->
+                                </p>
+                            </div>
+                            <br>
+
+                            <div class="publication-links">
+                                <span class="link-block">
+                                <a href="https://arxiv.org" class="external-link button is-normal is-rounded is-dark">
+                                  <span class="icon">
+                                    <svg class="svg-inline--fa fa-file-pdf fa-w-12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-pdf" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg="">
+                                      <path fill="currentColor" d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z">
+                                      </path>
+                                    </svg><!-- <i class="fas fa-file-pdf"></i> Font Awesome fontawesome.com -->
+                                  </span>
+                                <span>Paper</span>
+                                </a>
+                                </span>
+                                <span class="link-block">
+                                <a href="https://github.com/DSL-Lab/UniEdit-Flow" class="external-link button is-normal is-rounded is-dark">
+                                  <span class="icon">
+                                    <svg class="svg-inline--fa fa-github fa-w-16" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg="">
+                                      <path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                                      </path>
+                                    </svg>
+                                  </span>
+                                <span>Code</span>
+                                </a>
+                                </span>
+                                <span class="link-block">
+                            <a href="#bibtex" class="external-link button is-normal is-rounded is-dark">
+                                <span class="icon">
+                                  <i class="ai ai-obp"></i>
+                                </span>
+                                <span>BibTex</span>
+                                </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="has-text-centered">
+                    <img src="./image_assets/teaser.png" width="100%">
+                </div>
+                <br>
+                <div class="has-text-justified">
+                    <p>
+                        <b> UniEdit-Flow for image inversion and editing.</b>
+                        Our approach proposes a <b> <i style="color: rgb(141, 133, 229);"> highly accurate and efficient, model-agnostic, training and tuning-free </i></b> sampling strategy for flow models to tackle image inversion and editing problems.
+                        Cluttered scenes are difficult for inversion and reconstruction, leading to failure results on various methods.
+                        Our <b>Uni-Inv</b> achieves exact reconstruction even in such complex situations (1st line).
+                        Furthermore, existing flow editing always maintain undesirable affects, out region-aware sampling-based <b>Uni-Edit</b> showcases excellent performance for both editing and background preservation (2nd line).
+                    </p>
+                    <br>
+                </div>
+                <div class="column has-text-centered link-container" id="blocks">
+                    <div class="publication-links">
+                        <span class="link-block">
+                        <a href="./index.html#blocks" class="external-link button is-normal" style="width: 24%; background-color: #8784C7; color: #FFFFFF;">
+                          Home
+                        </a>
+                      </span>
+                        <span class="link-block">
+                        <a href="./compare_rec.html#blocks" class="external-link button is-normal" style="width: 24%; color: #8784C7;">
+                            Compare: Reconstruction
+                        </a>
+                      </span>
+                        <span class="link-block">
+                        <a href="./compare_edit.html#blocks" class="external-link button is-normal" style="width: 24%; color: #8784C7;">
+                          Compare: Editing
+                        </a>
+                      </span>
+                        <span class="link-block">
+                        <a href="./gallery.html#blocks" class="external-link button is-normal" style="width: 24%; color: #8784C7;">
+                          Gallery
+                        </a>
+                      </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="section">
+
+        <!--/ Matting. -->
+        <div class="container is-max-desktop">
+
+            <h2 class="title is-3 has-text-centered">Overview</h2>
+            <!-- color -->
+            <div class="columns is-centered">
+                <div class="column is-four-fifths">
+
+                <div class="has-text-justified">
+                    <p>
+                        Flow matching models have emerged as a strong alternative to diffusion models, but existing inversion and editing methods designed for diffusion are often ineffective or inapplicable to them. 
+                        The straight-line, non-crossing trajectories of flow models pose challenges for diffusion-based approaches but also open avenues for novel solutions. <br>
+                        In this work, we introduce a predictor-corrector-based framework for inversion and editing in flow models. 
+                        First, we propose <b>Uni-Inv</b>, an effective inversion method designed for accurate reconstruction.
+                        Building on this, we extend the concept of delayed injection to flow models and introduce <b>Uni-Edit</b>, a region-aware, robust image editing approach.
+                        Our methodology is <b><i style="color: rgb(141, 133, 229);">tuning-free, model-agnostic, efficient, and effective</i></b>, enabling diverse edits while ensuring strong preservation of edit-irrelevant regions.
+                    </p>
+                    <br>
+                </div>
+
+                </div>
+            </div>
+            <div class="columns is-centered">
+                <div class="has-text-centered">
+                    <img src="./image_assets/framework.png" width="100%">
+                </div>
+            </div>
+            <div class="columns is-centered">
+                <div class="has-text-justified">
+                    <br>
+                    <b>An overview</b> of our proposed Uni-Inv and Uni-Edit (bird → red bird).
+                    (a) indicates that vanilla flow inversion is incapable for both exact image inversion and controllable editing.
+                    (b) demonstrates our proposed Uni-Inv and Uni-Edit, which perform efficient and effective inversion and editing. 
+                </div>
+            </div>
+            <!-- /style -->
+            <!-- /footnote -->
+        </div>
+    </section>
+
+
+    <section class="hero is-light is-small">
+        <div class="hero-body">
+            <div class="container is-max-desktop has-text-centered">
+                <h2 class="title is-3">Feature: Text-driven Image / Video Editing</h2>
+                
+                <!-- row 0 -->
+                <div class="columns is-centered">
+                    <div class="column">
+                        <strong style="font-size: larger;">FLUX 🎨</strong>
+                    </div>
+                    <div class="column">
+                        <strong style="font-size: larger;">Stable Diffusion 3 🎨</strong>
+                    </div>
+                    <div class="column">
+                        <strong style="font-size: larger;">Stable Diffusion XL 🎨</strong>
+                    </div>
+                </div>
+
+                <!-- row 1 -->
+                <div class="has-text-justified">
+                    <p style="text-align: center;">
+                        A <s>long</s> <strong style="font-size: larger;">short</strong> haired cat 
+                        <strong style="font-size: larger;"><u>with blue eyes</u></strong> looking up at something.
+                    </p>
+                </div>
+                <div class="columns is-centered">
+                    <div class="column">
+                        <div class="content">
+                            <div class="tab_container">
+                                <div id="juxtapose-embed1" data-startingposition="30%" data-animate="true" class="juxtapose">
+                                    <div class="jx-slider">
+                                        <div class="jx-handle " style="left: 54.53%;">
+                                            <div class="jx-arrow jx-left"></div>
+                                            <div class="jx-control">
+                                                <div class="jx-controller" tabindex="0" role="slider" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="jx-arrow jx-right"></div>
+                                        </div>
+                                        <div class="jx-image jx-left " style="width: 54.53%;">
+                                            <img src="./image_assets/text-driven_image_editing/cat/input.png" alt="" data-label="Source">
+                                        </div>
+                                        <div class="jx-image jx-right " style="width: 45.47%;"><img src="./image_assets/text-driven_image_editing/cat/flux.png" alt="" data-label="Uni-Edit">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <div class="tab_container">
+                                <div id="juxtapose-embed2" data-startingposition="30%" data-animate="true" class="juxtapose">
+                                    <div class="jx-slider">
+                                        <div class="jx-handle " style="left: 54.53%;">
+                                            <div class="jx-arrow jx-left"></div>
+                                            <div class="jx-control">
+                                                <div class="jx-controller" tabindex="0" role="slider" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="jx-arrow jx-right"></div>
+                                        </div>
+                                        <div class="jx-image jx-left " style="width: 54.53%;"><img src="./image_assets/text-driven_image_editing/cat/input.png" alt="" data-label="Source">
+                                        </div>
+                                        <div class="jx-image jx-right " style="width: 45.47%;"><img src="./image_assets/text-driven_image_editing/cat/sd3.png" alt="" data-label="Uni-Edit">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <div class="tab_container">
+                                <div id="juxtapose-embed2" data-startingposition="30%" data-animate="true" class="juxtapose">
+                                    <div class="jx-slider">
+                                        <div class="jx-handle " style="left: 54.53%;">
+                                            <div class="jx-arrow jx-left"></div>
+                                            <div class="jx-control">
+                                                <div class="jx-controller" tabindex="0" role="slider" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="jx-arrow jx-right"></div>
+                                        </div>
+                                        <div class="jx-image jx-left " style="width: 54.53%;"><img src="./image_assets/text-driven_image_editing/cat/input.png" alt="" data-label="Source">
+                                        </div>
+                                        <div class="jx-image jx-right " style="width: 45.47%;"><img src="./image_assets/text-driven_image_editing/cat/sdxl.png" alt="" data-label="Uni-Edit">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- row 2 -->
+                <div class="has-text-justified">
+                    <p style="text-align: center;">
+                        Two <strong style="font-size: larger;"><u>origami</u></strong> birds sitting on a branch.
+                    </p>
+                </div>
+                <div class="columns is-centered">
+                    <div class="column">
+                        <div class="content">
+                            <div class="tab_container">
+                                <div id="juxtapose-embed1" data-startingposition="30%" data-animate="true" class="juxtapose">
+                                    <div class="jx-slider">
+                                        <div class="jx-handle " style="left: 54.53%;">
+                                            <div class="jx-arrow jx-left"></div>
+                                            <div class="jx-control">
+                                                <div class="jx-controller" tabindex="0" role="slider" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="jx-arrow jx-right"></div>
+                                        </div>
+                                        <div class="jx-image jx-left " style="width: 54.53%;">
+                                            <img src="./image_assets/text-driven_image_editing/origami/input.png" alt="" data-label="Source">
+                                        </div>
+                                        <div class="jx-image jx-right " style="width: 45.47%;"><img src="./image_assets/text-driven_image_editing/origami/flux.png" alt="" data-label="Uni-Edit">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <div class="tab_container">
+                                <div id="juxtapose-embed1" data-startingposition="30%" data-animate="true" class="juxtapose">
+                                    <div class="jx-slider">
+                                        <div class="jx-handle " style="left: 54.53%;">
+                                            <div class="jx-arrow jx-left"></div>
+                                            <div class="jx-control">
+                                                <div class="jx-controller" tabindex="0" role="slider" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="jx-arrow jx-right"></div>
+                                        </div>
+                                        <div class="jx-image jx-left " style="width: 54.53%;">
+                                            <img src="./image_assets/text-driven_image_editing/origami/input.png" alt="" data-label="Source">
+                                        </div>
+                                        <div class="jx-image jx-right " style="width: 45.47%;"><img src="./image_assets/text-driven_image_editing/origami/sd3.png" alt="" data-label="Uni-Edit">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <div class="tab_container">
+                                <div id="juxtapose-embed1" data-startingposition="30%" data-animate="true" class="juxtapose">
+                                    <div class="jx-slider">
+                                        <div class="jx-handle " style="left: 54.53%;">
+                                            <div class="jx-arrow jx-left"></div>
+                                            <div class="jx-control">
+                                                <div class="jx-controller" tabindex="0" role="slider" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="jx-arrow jx-right"></div>
+                                        </div>
+                                        <div class="jx-image jx-left " style="width: 54.53%;">
+                                            <img src="./image_assets/text-driven_image_editing/origami/input.png" alt="" data-label="Source">
+                                        </div>
+                                        <div class="jx-image jx-right " style="width: 45.47%;"><img src="./image_assets/text-driven_image_editing/origami/sdxl.png" alt="" data-label="Uni-Edit">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- row 3 -->
+                <div class="has-text-justified">
+                    <p style="text-align: center;">
+                        A clown <strong style="font-size: larger;"><u>in pixel art style</u></strong> with colorful hair.
+                    </p>
+                </div>
+                <div class="columns is-centered">
+                    <div class="column">
+                        <div class="content">
+                            <div class="tab_container">
+                                <div id="juxtapose-embed1" data-startingposition="30%" data-animate="true" class="juxtapose">
+                                    <div class="jx-slider">
+                                        <div class="jx-handle " style="left: 54.53%;">
+                                            <div class="jx-arrow jx-left"></div>
+                                            <div class="jx-control">
+                                                <div class="jx-controller" tabindex="0" role="slider" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="jx-arrow jx-right"></div>
+                                        </div>
+                                        <div class="jx-image jx-left " style="width: 54.53%;">
+                                            <img src="./image_assets/text-driven_image_editing/joker/input.png" alt="" data-label="Source">
+                                        </div>
+                                        <div class="jx-image jx-right " style="width: 45.47%;"><img src="./image_assets/text-driven_image_editing/joker/flux.png" alt="" data-label="Uni-Edit">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <div class="tab_container">
+                                <div id="juxtapose-embed2" data-startingposition="30%" data-animate="true" class="juxtapose">
+                                    <div class="jx-slider">
+                                        <div class="jx-handle " style="left: 54.53%;">
+                                            <div class="jx-arrow jx-left"></div>
+                                            <div class="jx-control">
+                                                <div class="jx-controller" tabindex="0" role="slider" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="jx-arrow jx-right"></div>
+                                        </div>
+                                        <div class="jx-image jx-left " style="width: 54.53%;"><img src="./image_assets/text-driven_image_editing/joker/input.png" alt="" data-label="Source">
+                                        </div>
+                                        <div class="jx-image jx-right " style="width: 45.47%;"><img src="./image_assets/text-driven_image_editing/joker/sd3.png" alt="" data-label="Uni-Edit">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <div class="tab_container">
+                                <div id="juxtapose-embed2" data-startingposition="30%" data-animate="true" class="juxtapose">
+                                    <div class="jx-slider">
+                                        <div class="jx-handle " style="left: 54.53%;">
+                                            <div class="jx-arrow jx-left"></div>
+                                            <div class="jx-control">
+                                                <div class="jx-controller" tabindex="0" role="slider" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="jx-arrow jx-right"></div>
+                                        </div>
+                                        <div class="jx-image jx-left " style="width: 54.53%;"><img src="./image_assets/text-driven_image_editing/joker/input.png" alt="" data-label="Source">
+                                        </div>
+                                        <div class="jx-image jx-right " style="width: 45.47%;"><img src="./image_assets/text-driven_image_editing/joker/sdxl.png" alt="" data-label="Uni-Edit">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <!-- row 0 -->
+                <div class="columns is-centered">
+                    <div class="column">
+                        <div class="has-text-centered">
+                            <strong style="font-size: larger;">Wan 🎥 Flow-based Video Generation Model</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- row 1 -->
+                <div class="columns is-centered">
+                    <div class="column">
+                        <div class="has-text-justified">
+                            <p style="text-align: center;">
+                                A young rider wearing full protective gear, including a black helmet and motocross-style outfit, is navigating a <s>BMX bike</s> <strong style="font-size: larger;">motorcycle</strong> over a series of sandy dirt bumps on a track enclosed by a fence...
+                            </p>
+                        </div>
+                        <div class="content">
+                            <div class="tab_container">
+                                <div id="juxtapose-embed1" data-startingposition="30%" data-animate="true" class="juxtapose">
+                                    <div class="jx-slider">
+                                        <div class="jx-handle " style="left: 54.53%;">
+                                            <div class="jx-arrow jx-left"></div>
+                                            <div class="jx-control">
+                                                <div class="jx-controller" tabindex="0" role="slider" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="jx-arrow jx-right"></div>
+                                        </div>
+                                        <div class="jx-image jx-left " style="width: 54.53%;">
+                                            <img src="./image_assets/text-driven_video_editing/bmx-bumps/ae_video.gif" alt="" data-label="Source">
+                                        </div>
+                                        <div class="jx-image jx-right " style="width: 45.47%;"><img src="./image_assets/text-driven_video_editing/bmx-bumps/result_edit_video.gif" alt="" data-label="Uni-Edit">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="has-text-justified">
+                            <p style="text-align: center;">
+                                A <s>koala</s> <strong style="font-size: larger;">cat</strong> with thick gray fur is captured mid-motion as it reaches out with its front paws to climb or move between tree branches, surrounded by lush green leaves and dappled sunlight in a forested area.
+                            </p>
+                        </div>
+                        <div class="content">
+                            <div class="tab_container">
+                                <div id="juxtapose-embed1" data-startingposition="30%" data-animate="true" class="juxtapose">
+                                    <div class="jx-slider">
+                                        <div class="jx-handle " style="left: 54.53%;">
+                                            <div class="jx-arrow jx-left"></div>
+                                            <div class="jx-control">
+                                                <div class="jx-controller" tabindex="0" role="slider" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="jx-arrow jx-right"></div>
+                                        </div>
+                                        <div class="jx-image jx-left " style="width: 54.53%;">
+                                            <img src="./image_assets/text-driven_video_editing/koala/ae_video.gif" alt="" data-label="Source">
+                                        </div>
+                                        <div class="jx-image jx-right " style="width: 45.47%;"><img src="./image_assets/text-driven_video_editing/koala/result_edit_video.gif" alt="" data-label="Uni-Edit">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="section">
+
+        <!--/ Matting. -->
+        <div class="container is-max-desktop">
+
+            <h2 class="title is-3 has-text-centered">Method</h2>
+            <!-- color -->
+            <hr>
+            <div class="content has-text-centered">
+                <h3>
+                    Uni-Inv
+                </h3>
+            </div>
+            <div class="columns is-centered">
+                <div class="content has-text-justified">
+                    The motivation of Uni-Inv is to conduct an accurate inversion capable of inverting ODE solutions back to the initial value for particular deterministic samplers.
+                    Intuitively, Uni-Inv introduces a correction procedure before performing the inversion step. 
+                    It first transitions to the high-noise step and estimates the velocity by simulating a denoising procedure.
+                    Then it returns to the original low-noise step and performs inversion using the latest ''denoising-like'' velocity.
+                </div>
+            </div>
+            <br>
+            <div class="columns is-centered">
+                <div style="display: flex;">
+                    <div style="flex: 0 0 38%;">
+                        <div class="content has-text-justified">
+                            <img src="./image_assets/t_t_1.png">
+                            <b>Per-step error of the velocities and samples</b> of vanilla inversions.
+                            We first synthesis an image \(\boldsymbol{Z}_0\), then conduct vanilla inversion to get inverted noises \(\boldsymbol{Z}_1\) with per-step velocity of \(\boldsymbol{v}_\theta(\boldsymbol{\widehat{Z}}_{t_{i-1}}, t_{i-1})\) (<span style="color: #5555AA;">\(\blacklozenge\)</span>) and \(\boldsymbol{v}_\theta(\boldsymbol{\widehat{Z}}_{t_{i-1}}, t_{i})\) (<span style="color: #CAA6CA;">\(\blacksquare\)</span>), respectively.
+                            We plot the per-step local error of samples (\(\Delta \boldsymbol{Z}\)) velocities (\(\Delta \boldsymbol{v}\)).
+                            The right shows the visualization of various \(\boldsymbol{Z}_1\), while their border colors correspond to different conditions (black for the initial noise).
+                        </div>
+                    </div>
+                
+                    <div style="flex: 0 0 2%;">
+                    </div>
+
+                    <div style="flex: 0 0 60%;">
+                        <div class="content has-text-centered">
+                            <img src="./image_assets/algo_uni-inv.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- /color -->
+            <hr>
+            <!-- style -->
+
+            <div class="content has-text-centered">
+                <h3>
+                    Uni-Edit
+                </h3>
+            </div>
+            <div class="columns is-centered">
+                <div class="content has-text-justified">
+                    <h4>
+                        Delayed Injection
+                    </h4>
+                    Previous works have introduced delayed injection, a simple yet effective technique that helps maintain image consistency during editing.
+                    Due to the non-linear and intersecting sampling trajectories of diffusion models, modifying conditions midway allows for trajectory transitions, facilitating more flexible and localized image editing.
+                    However, flow models exhibit straight-line and non-intersecting trajectories, which fundamentally hinder the effectiveness of delayed injection, particularly in image editing. 
+                </div>
+            </div>
+            <br>
+            <div class="content has-text-justified">
+                <div class="columns is-centered">
+                    <div style="display: flex;">
+                        <div style="flex: 0 0 42%;">
+                            <div class="content has-text-centered">
+                                <img src="./image_assets/background_delay_inj.png">
+                            </div>
+                        </div>
+
+                        <div style="flex: 0 0 2%;">
+                        </div>
+                    
+                        <div style="flex: 0 0 56%;">
+                            <div class="content has-text-justified">
+                                <b>Delayed injection</b>, which retains the source condition during the early denoising steps and introduces the edit condition at a middle timestep (illustrated in the bottom part), is a widely used technique in diffusion-based editing (top row).
+                                However, when applied to flow models (second row), it is ineffective.
+                                While flow-based editing exhibits a mild tendency toward the target edit, it fails to produce sufficiently strong effects.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="columns is-centered">
+                <div class="content has-text-justified">
+                    <h4>
+                        Uni-Edit
+                    </h4>
+                    Instead of simply injecting conditions earlier, Uni-Edit injects editing conditions earlier while mitigating excessive modifications using information from the current latent state.
+                    We propose additional correction steps during the editing procedure solely based on the current latent \(\boldsymbol{\widetilde{Z}}_{t_i}\).
+                    We further leverage the velocity difference \(\boldsymbol{v}_i^{-}\) to construct a mask \(\boldsymbol{m}_i = \texttt{MASK}(\boldsymbol{v}_i^{-})\), which serves as regional guidance for correction and velocity prediction, thereby improving the controllability of Uni-Edit.
+                </div>
+            </div>
+            <br>
+            <div class="columns is-centered">
+                <div style="display: flex;">
+                    <div style="flex: 0 0 40%;">
+                        <div class="content has-text-justified">
+                            <img src="./image_assets/delay_injection.png">
+                            <b>Demonstration of various sampling-based image editing methods</b> (dog \(\xrightarrow{}\) lion).
+                            Directly utilizing \(\boldsymbol{c}^T\) as condition leads to an undue editing.
+                            Leveraging delayed injection, which is widely used in diffusion-based methods, inevitably results in an inchoate performance when using deterministic models.
+                            Our Uni-Edit mitigates early steps obtained components that are not conducive to editing, ultimately achieving satisfying results.
+                        </div>
+                    </div>
+                
+                    <div style="flex: 0 0 2%;">
+                    </div>
+
+                    <div style="flex: 0 0 58%;">
+                        <div class="content has-text-centered">
+                            <img src="./image_assets/algo_uni-edit.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="columns is-centered">
+                <div class="content has-text-justified">
+                    <h4>
+                        Editing Procedure
+                    </h4>
+                    Early steps focus on broader areas with stronger editing intensity to eliminate original concepts, while later steps refine details, reducing the influence of \(\boldsymbol{m}_i\). 
+                </div>
+            </div>
+            <br>
+            <div class="columns is-centered">
+                <div class="content has-text-justified">
+                    <img src="./image_assets/regional_enhancement_and_velocity_fusion.png">
+                    <b>Visualization of Uni-Edit process</b>.
+                    The guidance mask of each denoising step is shown at the upper right of the image.
+                    We also demonstrate the "Sphinx" phenomenon that existing latent fusion approaches may cause at the lower left of the figure.
+                </div>
+            </div>
+            
+            <!-- /color -->
+            <hr>
+            <!-- style -->
+
+    </section>
+
+
+
+    <section class="section" id="BibTeX">
+        <div class="container is-max-desktop content">
+            <h2 class="title"><a id="bibtex"><span style="color: #8784C7;">BibTeX</span></a></h2>
+            <pre><code>
+                TODO
+            </code></pre>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="columns is-centered">
+            <div class="column is-8">
+                <div class="content">
+                    <p>
+                        This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+              Commons Attribution-ShareAlike 4.0 International License</a>.
+                    </p>
+                    <p>
+                        Website adapted from the following <a href="https://github.com/nerfies/nerfies.github.io">source code</a>.
+                        We also referred to the website code of <a href="https://sled-group.github.io/InfEdit/">InfEdit</a>, thanks for their awesome work. 
+                    </p>
+                    <p>
+                        You are free to borrow the source code of this website, we'd just like that you could link back to this page in the footer.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+    <script src="./assets/js/juxtapose.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script defer="" src="./assets/js/fontawesome.all.min.js"></script>
+    <script src="./assets/js/bulma-carousel.min.js"></script>
+    <script src="./assets/js/bulma-slider.min.js"></script>
+    <script src="./assets/js/magnifier.js"></script>
+
+</body>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+
+</html>

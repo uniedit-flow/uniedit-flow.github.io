@@ -1,2 +1,1 @@
-# uniedit-flow.github.io
-uniedit-flow.github.io
+# Website code of UniEdit-Flow
