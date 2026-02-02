@@ -59,30 +59,37 @@
             <div class="container is-max-desktop">
                 <div class="columns is-centered">
                     <div class="column has-text-centered">
-                        <h1 class="title is-1 publication-title"> <span style="color: rgb(141, 133, 229);">UniEdit-Flow</span> <br> Unleashing Inversion and Editing <br> in the Era of Flow Models</h1>
+                        <h1 class="title is-1 publication-title"> <span style="color: rgb(141, 133, 229);">UniEdit-Flow</span> <br> Unleashing Inversion and Editing in the Era of Flow Models</h1>
+
+                        <p id="fn1" style="font-size: x-large;">
+                            <b>ICLR 2026</b>
+                        </p>
+
                         <div class="column has-text-centered">
 
                             <div class="is-size-5 publication-authors">
                                 <p>
                                     <span class="author-block">
-                                Guanlong Jiao</a><sup>1,3</sup>&nbsp</span>
+                                Guanlong Jiao</a><sup>1,4</sup>&nbsp</span>
                                     <span class="author-block">
-                                Biqing Huang</a><sup>1</sup>&nbsp</span>
+                                Biqing Huang</a><sup>2</sup>&nbsp</span>
                                     <span class="author-block">
-                                <a href="https://wangkua1.github.io/"><span style="color: rgb(141, 133, 229);">Kuan-Chieh Wang</span></a><sup>2</sup>&nbsp</span>
+                                <a href="https://wangkua1.github.io/"><span style="color: rgb(141, 133, 229);">Kuan-Chieh Wang</span></a><sup>3</sup>&nbsp</span>
                                     <span class="author-block">
-                                <a href="https://lrjconan.github.io/"><span style="color: rgb(141, 133, 229);">Renjie Liao</span></a><sup>3</sup>&nbsp</span>
+                                <a href="https://lrjconan.github.io/"><span style="color: rgb(141, 133, 229);">Renjie Liao</span></a><sup>1,4</sup>&nbsp</span>
                                 </p>
                             </div>
 
-                            <div class="is-size-5 publication-authors">
+                            <div class="is-size-8 publication-authors">
                                 <p>
                                     <span class="author-block">
-                            <sup>1</sup>Tsinghua University&nbsp</span>
+                            <sup>1</sup>The University of British Columbia&nbsp</span>
                                     <span class="author-block">
-                            <sup>2</sup>Snap Inc.&nbsp</span>
+                            <sup>2</sup>Tsinghua University&nbsp</span>
                                     <span class="author-block">
-                            <sup>3</sup>The University of British Columbia&nbsp</span>
+                            <sup>3</sup>Snap Inc.&nbsp</span>
+                                    <span class="author-block">
+                            <sup>4</sup>Vector Institute&nbsp</span>
                                 </p>
                             </div>
                             <br>
@@ -549,9 +556,9 @@
                         <div class="content has-text-justified">
                             <img src="./image_assets/t_t_1.png">
                             <b>Per-step error of the velocities and samples</b> of vanilla inversions.
-                            We first synthesis an image \(\boldsymbol{Z}_0\), then conduct vanilla inversion to get inverted noises \(\boldsymbol{Z}_1\) with per-step velocity of \(\boldsymbol{v}_\theta(\boldsymbol{\widehat{Z}}_{t_{i-1}}, t_{i-1})\) (<span style="color: #5555AA;">\(\blacklozenge\)</span>) and \(\boldsymbol{v}_\theta(\boldsymbol{\widehat{Z}}_{t_{i-1}}, t_{i})\) (<span style="color: #CAA6CA;">\(\blacksquare\)</span>), respectively.
+                            We first synthesis an image \(\boldsymbol{Z}_0\) from random noise \(\boldsymbol{Z}_1\), then conduct inversions to get various inverted noises \(\widehat{\boldsymbol{Z}}_1\) with velocity of \(\boldsymbol{v}_\theta(\boldsymbol{\widehat{Z}}_{t_{i-1}}, t_{i-1})\) (<span style="color: #5555AA;">\(\blacklozenge\)</span>), \(\boldsymbol{v}_\theta(\boldsymbol{\widehat{Z}}_{t_{i-1}}, t_{i})\) (<span style="color: #CAA6CA;">\(\blacksquare\)</span>), and \inversion{} (<span style="color: #5D9EAB;">\(\blacklozenge\)</span>), respectively.
                             We plot the per-step local error of samples (\(\Delta \boldsymbol{Z}\)) velocities (\(\Delta \boldsymbol{v}\)).
-                            The right shows the visualization of various \(\boldsymbol{Z}_1\), while their border colors correspond to different conditions (black for the initial noise).
+                            The right shows various inverted \(\widehat{\boldsymbol{Z}}_1\), while their border colors correspond to different inversion methods.
                         </div>
                     </div>
                 
